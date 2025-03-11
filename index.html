@@ -1,68 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bache Site</title>
-  <link rel="stylesheet" href="style.css"> 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons (optional) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
-  <!--Font awesome for icons-->
-  <script src="https://kit.fontawesome.com/259dbc7eb6.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
+<main>
+  <!-- Header with Logo -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="d-flex flex-grow-1 content-center">
-          <div class="dropdown me-2">
-            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="productsDropdown"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              About Me
-            </button>
-            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="productsDropdown">
-              <li><a class="dropdown-item custom-dropdown-item" href="resume.html">Resume</a></li>
-              <li><a class="dropdown-item custom-dropdown-item" href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-<!--           <div class="dropdown me-2">
-            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="productsDropdown"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Products
-            </button>
-            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="productsDropdown">
-              <li><a class="dropdown-item custom-dropdown-item" href="projects.html">Projects</a></li>
-              <li><a class="dropdown-item custom-dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item custom-dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div> -->
-          <div class="dropdown">
-            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="docDropdown"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Game Design
-            </button>
-            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="supportDropdown">
-              <li><a class="dropdown-item custom-dropdown-item" href="itch.html">Itch.io</a></li>
-              <li><a class="dropdown-item custom-dropdown-item" href="projects.html">WIP Projects</a></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="supportDropdown"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Computer Science
-            </button>
-            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="supportDropdown">
-              <li><a class="dropdown-item custom-dropdown-item" href="compsciProjects.html">Projects</a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="container-fluid d-flex align-items-center">
+        <!-- Logo that links back to index.html -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="token_1.png" alt="Logo" width="60" height="60" class="brand-logo">
+          <div class="ms-2">NyaaSec</div>
+        </a>
       </div>
     </nav>
   </header>
-  <main>
+
   <!-- Hero Section -->
   <section class="hero text-center text-white d-flex align-items-center justify-content-center">
     <div class="container">
@@ -164,61 +113,13 @@
     font-weight: bold;
   }
 
-  /* Explore My Work Button */
-  .explore-btn {
-    background-color: gray;
-    border-color: gray;
-    color: white;
-    transition: background-color 0.3s, border-color 0.3s;
+  /* Header Logo */
+  .brand-logo {
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
   }
-  .explore-btn:hover {
-    background-color: blue;
-    border-color: blue;
+  .brand-logo:hover {
+    transform: scale(1.1);
   }
 
-  /* Discord Icon Hover Effect */
-  .discord-icon i {
-    transition: color 0.3s;
-  }
-  .discord-icon:hover i {
-    color: purple;
-  }
-
-  /* Projects Card Hover Effect */
-  .projects .card {
-    border: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  .projects .card:hover {
-    transform: scale(1.05);
-  }
-</style>
-
-<!-- Back to Top Script -->
-<script>
-  document.getElementById("back-to-top").addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
-
-
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    
-    </body>
-    </html>
-
-    <script>
-      const backButton = document.getElementById("back-to-top");
-      backButton.addEventListener("click", function () {
-        window.scrollTo({top: 0, behavior: "smooth"});
-      });
-    </script>
-  </main>
-  <!-- Bootstrap JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+  /* Explore My Work Butt
