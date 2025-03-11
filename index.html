@@ -37,6 +37,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding-bottom: 20px; /* Added equal bottom padding */
     }
     .hero h1 {
       font-weight: bold;
@@ -44,14 +45,14 @@
 
     /* Explore My Work Button */
     .explore-btn {
-      background-color: gray;
-      border-color: gray;
-      color: white;
-      transition: background-color 0.3s, border-color 0.3s;
+      background: url('token_1.png') center/cover no-repeat;
+      width: 80px;
+      height: 80px;
+      border: none;
+      transition: transform 0.3s ease-in-out;
     }
     .explore-btn:hover {
-      background-color: blue;
-      border-color: blue;
+      transform: scale(1.1);
     }
 
     /* Dropdown Styling */
@@ -148,7 +149,12 @@
         <h1 class="display-3">Welcome to My Website</h1>
         <p class="lead">Game Developer | Wargamer | Programmer</p>
         <p class="hero-description">I create strategy games, RPGs, and custom mechanics that blend tactical depth with compelling storytelling.</p>
-        <a href="projects.html" class="btn explore-btn btn-lg">Explore My Work</a>
+        <div class="mt-3">
+          <p><strong>Explore My Work</strong></p>
+          <a href="projects.html">
+            <button class="explore-btn"></button>
+          </a>
+        </div>
       </div>
     </section>
 
