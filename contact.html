@@ -4,57 +4,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bache Site</title>
-  <link rel="stylesheet" href="style.css"> 
+  <title>Contact - Connor Bache</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons (optional) -->
+  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
-  <!--Font awesome for icons-->
+  <!-- Font Awesome for Icons -->
   <script src="https://kit.fontawesome.com/259dbc7eb6.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Styles -->
+  <style>
+    .contact-container {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      background: #ffffff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .contact-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .contact-header h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .contact-section {
+      margin-bottom: 20px;
+    }
+    .contact-section h2 {
+      font-size: 22px;
+      font-weight: bold;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+    }
+    .contact-info i {
+      font-size: 24px;
+      color: #007bff;
+    }
+    .contact-info a {
+      text-decoration: none;
+      color: black;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="d-flex flex-grow-1 content-center">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="token_1.png" alt="Logo" width="60" height="60" class="brand-logo">
+          <div class="ms-2">Manratt Games</div>
+        </a>
+
+        <!-- Navigation Links & Dropdowns -->
+        <div class="d-flex flex-grow-1 justify-content-center">
+          <!-- About Me Dropdown -->
           <div class="dropdown me-2">
-            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="productsDropdown"
+            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="aboutDropdown"
               data-bs-toggle="dropdown" aria-expanded="false">
               About Me
             </button>
-            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="productsDropdown">
+            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="aboutDropdown">
               <li><a class="dropdown-item custom-dropdown-item" href="resume.html">Resume</a></li>
               <li><a class="dropdown-item custom-dropdown-item" href="contact.html">Contact</a></li>
             </ul>
           </div>
-<!--           <div class="dropdown me-2">
-            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="productsDropdown"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Products
-            </button>
-            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="productsDropdown">
-              <li><a class="dropdown-item custom-dropdown-item" href="projects.html">Projects</a></li>
-              <li><a class="dropdown-item custom-dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item custom-dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div> -->
-          <div class="dropdown">
-            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="docDropdown"
+
+          <!-- Game Design Dropdown -->
+          <div class="dropdown me-2">
+            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="gameDesignDropdown"
               data-bs-toggle="dropdown" aria-expanded="false">
               Game Design
             </button>
-            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="supportDropdown">
+            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="gameDesignDropdown">
               <li><a class="dropdown-item custom-dropdown-item" href="itch.html">Itch.io</a></li>
               <li><a class="dropdown-item custom-dropdown-item" href="projects.html">WIP Projects</a></li>
             </ul>
           </div>
+
+          <!-- Computer Science Dropdown -->
           <div class="dropdown">
-            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="supportDropdown"
+            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="compsciDropdown"
               data-bs-toggle="dropdown" aria-expanded="false">
               Computer Science
             </button>
-            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="supportDropdown">
+            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="compsciDropdown">
               <li><a class="dropdown-item custom-dropdown-item" href="compsciProjects.html">Projects</a></li>
             </ul>
           </div>
@@ -62,139 +115,42 @@
       </div>
     </nav>
   </header>
-  <main>
-    <!-- Main content here -->
-    <main>
-  <!-- Hero Section -->
-  <section class="hero text-center text-white d-flex align-items-center justify-content-center">
-    <div class="container">
-      <h1 class="display-3">Welcome to My Website</h1>
-      <p class="lead">Game Developer | Wargamer | Programmer</p>
-      <p class="hero-description">I create strategy games, RPGs, and custom mechanics that blend tactical depth with compelling storytelling.</p>
-      <a href="projects.html" class="btn btn-outline-light btn-lg">Explore My Work</a>
-    </div>
-  </section>
 
-  <!-- About Me Section -->
-  <section class="about-me py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h2>Who Am I?</h2>
-          <p>I'm a game developer, wargamer, and programmer with a passion for designing deep, engaging experiences. My projects span video games, tabletop RPGs, to philosophy and writing.</p>
-          <p>From <b>"Apollyon: Corpse Gods"</b> to <b>"Demihuman Combat"</b>, my creations emphasize lore-driven storytelling, meaningful interactions, and tactical depth.</p>
-          <a href="contact.html" class="btn btn-dark">Get in Touch</a>
-        </div>
-        <div class="col-lg-6 text-center">
-          <img src="nyaa.png" alt="My Logo" class="img-fluid rounded-circle" width="250">
-        </div>
+  <!-- Contact Information -->
+  <main class="container py-5">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h1>Contact Connor Bache</h1>
+        <p>Reach out to me in the order of preference listed below.</p>
       </div>
+
+      <section class="contact-section">
+        <h2>Preferred Contact Method</h2>
+        <div class="contact-info">
+          <i class="fa-solid fa-mobile-alt"></i>
+          <span>Text me at <strong>267-663-2543</strong> (Fastest response)</span>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h2>Secondary Contact</h2>
+        <div class="contact-info">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email me at <a href="mailto:ctb5494@psu.edu">ctb5494@psu.edu</a> (Checked regularly)</span>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h2>Alternative Contact</h2>
+        <div class="contact-info">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email me at <a href="mailto:connorbache@outlook.com">connorbache@outlook.com</a> (Checked less often)</span>
+        </div>
+      </section>
     </div>
-  </section>
-
-  <!-- Skills & Interests -->
-  <section class="skills bg-light py-5">
-    <div class="container text-center">
-      <h2>What I Do</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <i class="fa-solid fa-gamepad fa-3x mb-3"></i>
-          <h4>Game Development</h4>
-          <p>Unity (though I'm not very good yet), wargames, RPG mechanics.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fa-solid fa-code fa-3x mb-3"></i>
-          <h4>Programming</h4>
-          <p>Java, Python, and web development.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fa-solid fa-dice-d20 fa-3x mb-3"></i>
-          <h4>Tabletop & RPG Design</h4>
-          <p>Custom mechanics, deep lore, strategic gameplay.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Showcase -->
-  <section class="projects py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Featured Projects</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Apollyon: Corpse Gods</h5>
-              <p class="card-text">A dark fantasy RPG where lore is revealed through poetry, and players navigate faction conflicts, strange artifacts, and the horrors below.</p>
-              <a href="documentation.html" class="btn btn-dark">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Demihuman Combat</h5>
-              <p class="card-text">A 2D real-time strategy game that simulates true battlefield conditions, where positioning and formations determine victory.</p>
-              <a href="sourceCode.html" class="btn btn-dark">See the Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Back to Top Button -->
-  <button type="button" class="btn btn-dark" id="back-to-top">Back to Top</button>
-</main>
-
-<!-- CSS Styles -->
-<style>
-  .hero {
-    background: url('background.jpg') center/cover no-repeat;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .hero h1 {
-    font-weight: bold;
-  }
-  .skills .fa-solid {
-    color: #343a40;
-  }
-  .projects .card {
-    border: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  .projects .card:hover {
-    transform: scale(1.05);
-  }
-</style>
-
-<!-- Back to Top Script -->
-<script>
-  document.getElementById("back-to-top").addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
-
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    
-    </body>
-    </html>
-
-    <script>
-      const backButton = document.getElementById("back-to-top");
-      backButton.addEventListener("click", function () {
-        window.scrollTo({top: 0, behavior: "smooth"});
-      });
-    </script>
   </main>
-  <!-- Bootstrap JavaScript Bundle with Popper -->
+
+  <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
