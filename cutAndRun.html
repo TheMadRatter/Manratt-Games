@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cut & Run - Manratt Games</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/259dbc7eb6.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Styles -->
+  <style>
+    .game-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      background: #ffffff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .game-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .game-header h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .game-summary {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    .game-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .game-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .game-link:hover {
+      background-color: #fa5c5c; /* Itch.io's red */
+    }
+    .game-link.wgv:hover {
+      background-color: #555;
+    }
+    .game-logo {
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="token_1.png" alt="Logo" width="60" height="60" class="brand-logo">
+          <div class="ms-2">Manratt Games</div>
+        </a>
+
+        <!-- Navigation Links & Dropdowns -->
+        <div class="d-flex flex-grow-1 justify-content-center">
+          <!-- About Me Dropdown -->
+          <div class="dropdown me-2">
+            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="aboutDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About Me
+            </button>
+            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item custom-dropdown-item" href="resume.html">Resume</a></li>
+              <li><a class="dropdown-item custom-dropdown-item" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Game Design Dropdown -->
+          <div class="dropdown me-2">
+            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="gameDesignDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Game Design
+            </button>
+            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="gameDesignDropdown">
+              <li><a class="dropdown-item custom-dropdown-item" href="itch.html">Itch.io</a></li>
+              <li><a class="dropdown-item custom-dropdown-item" href="projects.html">WIP Projects</a></li>
+            </ul>
+          </div>
+
+          <!-- Computer Science Dropdown -->
+          <div class="dropdown">
+            <button class="btn dropdown-toggle custom-dropdown-btn" type="button" id="compsciDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Computer Science
+            </button>
+            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="compsciDropdown">
+              <li><a class="dropdown-item custom-dropdown-item" href="compsciProjects.html">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Game Content -->
+  <main class="container py-5">
+    <div class="game-container">
+      <div class="game-header">
+        <h1>Cut & Run</h1>
+      </div>
+      <p class="game-summary">
+        <strong>Cut & Run</strong> is a narrative skirmish wargame set in a fantasy medieval period where players manage mercenary warbands aiming to overthrow His Majesty, The King. Designed for 1-8 players, the game emphasizes strategic planning, customizable warbands, and dynamic campaigns. Players engage in battles, manage resources, and navigate a richly woven narrative to achieve their ultimate goal: regicide.
+      </p>
+
+      <div class="game-links">
+        <!-- Itch.io Link -->
+        <a href="https://man-ratt.itch.io/cut-run" target="_blank" class="game-link">
+          <img src="https://static.itch.io/images/itchio-textless-white.svg" class="game-logo" alt="Itch.io Logo">
+          Itch.io Version
+        </a>
+
+        <!-- Wargame Vault Link -->
+        <a href="https://www.wargamevault.com/product/505575/Cut--Run?src=hottest_filtered" target="_blank" class="game-link wgv">
+          <img src="https://www.wargamevault.com/themes/wgv/images/logo_full.png" class="game-logo" alt="Wargame Vault Logo">
+          Wargame Vault Version
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
 
