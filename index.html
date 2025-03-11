@@ -1,125 +1,187 @@
-<main>
-  <!-- Header with Logo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bache Site</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/259dbc7eb6.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Styles -->
+  <style>
+    /* Header Logo */
+    .brand-logo {
+      border-radius: 50%;
+      transition: transform 0.2s ease-in-out;
+    }
+    .brand-logo:hover {
+      transform: scale(1.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('background.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h1 {
+      font-weight: bold;
+    }
+
+    /* Explore My Work Button */
+    .explore-btn {
+      background-color: gray;
+      border-color: gray;
+      color: white;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+    .explore-btn:hover {
+      background-color: blue;
+      border-color: blue;
+    }
+
+    /* Discord Icon Hover Effect */
+    .discord-icon i {
+      transition: color 0.3s;
+    }
+    .discord-icon:hover i {
+      color: blue;
+    }
+
+    /* Projects Card Hover Effect */
+    .projects .card {
+      border: none;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .projects .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid d-flex align-items-center">
         <!-- Logo that links back to index.html -->
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img src="token_1.png" alt="Logo" width="60" height="60" class="brand-logo">
-          <div class="ms-2">Manratt Games</div>
+          <div class="ms-2">NyaaSec</div>
         </a>
       </div>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero text-center text-white d-flex align-items-center justify-content-center">
-    <div class="container">
-      <h1 class="display-3">Welcome to My Website</h1>
-      <p class="lead">Game Developer | Wargamer | Programmer</p>
-      <p class="hero-description">I create strategy games, RPGs, and custom mechanics that blend tactical depth with compelling storytelling.</p>
-      <a href="projects.html" class="btn explore-btn btn-lg">Explore My Work</a>
-    </div>
-  </section>
-
-  <!-- About Me Section -->
-  <section class="about-me py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h2>Who Am I?</h2>
-          <p>My name is Connor Bache, otherwise known as Manratt Games, or just Ratt if you don't have time. I'm a game developer, wargamer, and programmer with a passion for designing deep, engaging experiences. My projects span video games, tabletop RPGs, and philosophy.</p>
-          <p>From <b>"Apollyon: Corpse Gods"</b> to <b>"Demihuman Combat"</b>, my creations emphasize lore-driven storytelling, meaningful interactions, and tactical depth.</p>
-          <a href="contact.html" class="btn btn-dark">Get in Touch</a>
-        </div>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero text-center text-white d-flex align-items-center justify-content-center">
+      <div class="container">
+        <h1 class="display-3">Welcome to My Website</h1>
+        <p class="lead">Game Developer | Wargamer | Programmer</p>
+        <p class="hero-description">I create strategy games, RPGs, and custom mechanics that blend tactical depth with compelling storytelling.</p>
+        <a href="projects.html" class="btn explore-btn btn-lg">Explore My Work</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills & Interests -->
-  <section class="skills bg-light py-5">
-    <div class="container text-center">
-      <h2>What I Do</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <i class="fa-solid fa-gamepad fa-3x mb-3"></i>
-          <h4>Game Development</h4>
-          <p>Unity (though I'm not very good yet), wargames, RPG mechanics.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fa-solid fa-code fa-3x mb-3"></i>
-          <h4>Programming</h4>
-          <p>Java, Python, and web development.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fa-solid fa-dice-d20 fa-3x mb-3"></i>
-          <h4>Tabletop & RPG Design</h4>
-          <p>Custom mechanics, deep lore, strategic gameplay.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Showcase -->
-  <section class="projects py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Featured Projects</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Apollyon: Corpse Gods</h5>
-              <p class="card-text">A dark fantasy RPG played through Minecraft, where lore is revealed slowly, and players navigate faction conflicts, strange artifacts, and the horrors below.</p>
-              <a href="apollyon.html" class="btn btn-dark">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Demihuman Combat</h5>
-              <p class="card-text">A 2D tabletop wargame about heroes and villains battling for their own ends.</p>
-              <a href="demihumanCombat.html" class="btn btn-dark">Read the rules</a>
-            </div>
+    <!-- About Me Section -->
+    <section class="about-me py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2>Who Am I?</h2>
+            <p>I'm a game developer, wargamer, and programmer with a passion for designing deep, engaging experiences. My projects span video games, tabletop RPGs, and philosophy.</p>
+            <p>From <b>"Apollyon: Corpse Gods"</b> to <b>"Demihuman Combat"</b>, my creations emphasize lore-driven storytelling, meaningful interactions, and tactical depth.</p>
+            <a href="contact.html" class="btn btn-dark">Get in Touch</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Social Media -->
-  <footer class="bg-dark text-white mt-5 text-center py-4">
-    <h4>Social Media</h4>
-    <a href="https://discord.gg/zeEZjNGdTc" class="text-white mx-2 discord-icon" target="_blank">
-      <i class="fa-brands fa-discord fa-2x"></i>
-    </a>
-  </footer>
+    <!-- Skills & Interests -->
+    <section class="skills bg-light py-5">
+      <div class="container text-center">
+        <h2>What I Do</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <i class="fa-solid fa-gamepad fa-3x mb-3"></i>
+            <h4>Game Development</h4>
+            <p>Unity (though I'm not very good yet), wargames, RPG mechanics.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa-solid fa-code fa-3x mb-3"></i>
+            <h4>Programming</h4>
+            <p>Java, Python, and web development.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fa-solid fa-dice-d20 fa-3x mb-3"></i>
+            <h4>Tabletop & RPG Design</h4>
+            <p>Custom mechanics, deep lore, strategic gameplay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Back to Top Button -->
-  <button type="button" class="btn btn-dark" id="back-to-top">Back to Top</button>
-</main>
+    <!-- Projects Showcase -->
+    <section class="projects py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Featured Projects</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Apollyon: Corpse Gods</h5>
+                <p class="card-text">A dark fantasy RPG played through Minecraft, where lore is revealed slowly, and players navigate faction conflicts, strange artifacts, and the horrors below.</p>
+                <a href="apollyon.html" class="btn btn-dark">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Demihuman Combat</h5>
+                <p class="card-text">A 2D tabletop wargame about heroes and villains battling for their own ends.</p>
+                <a href="demihumanCombat.html" class="btn btn-dark">Read the rules</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- CSS Styles -->
-<style>
-  .hero {
-    background: url('background.jpg') center/cover no-repeat;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .hero h1 {
-    font-weight: bold;
-  }
+    <!-- Social Media -->
+    <footer class="bg-dark text-white mt-5 text-center py-4">
+      <h4>Social Media</h4>
+      <a href="https://discord.gg/zeEZjNGdTc" class="text-white mx-2 discord-icon" target="_blank">
+        <i class="fa-brands fa-discord fa-2x"></i>
+      </a>
+    </footer>
 
-  /* Header Logo */
-  .brand-logo {
-    border-radius: 50%;
-    transition: transform 0.2s ease-in-out;
-  }
-  .brand-logo:hover {
-    transform: scale(1.1);
-  }
+    <!-- Back to Top Button -->
+    <button type="button" class="btn btn-dark" id="back-to-top">Back to Top</button>
+  </main>
 
-  /* Explore My Work Butt
+  <!-- Scripts -->
+  <script>
+    document.getElementById("back-to-top").addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
