@@ -32,7 +32,9 @@
     /* Hero Section */
     .hero {
       background: url('background.jpg') center/cover no-repeat;
-      height: 20vh;
+      height: auto; /* Adjust height dynamically */
+      min-height: 40vh; /* Ensure it doesn't get too short */
+      padding-top: 20px; /* Add some spacing at the top */
       display: flex;
       flex-direction: column;
       justify-content: center;
